@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeViewModel"
+            type="com.francis.admob.ui.home.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <Button
+            android:id="@+id/btnbannerAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view)->homeViewModel.onClick(view)}"
+            android:text="@string/banner_ad"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btInterstitialAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view)->homeViewModel.onClick(view)}"
+            android:text="@string/interstitial_ad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btRewardedAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="@{(view)->homeViewModel.onClick(view)}"
+            android:text="@string/rewarded_ad"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnbannerAd" />
+
+        <Button
+            android:id="@+id/btRewardedAdNewApi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="@{(view)->homeViewModel.onClick(view)}"
+            android:text="@string/rewarded_ad_new_api"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            app:layout_constraintTop_toBottomOf="@+id/btInterstitialAd" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

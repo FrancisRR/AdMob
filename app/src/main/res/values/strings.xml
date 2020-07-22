@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AdMob</string>
+    <string name="banner_ad">Banner Ad</string>
+    <string name="interstitial_ad">Interstitial Ad</string>
+    <string name="rewarded_ad">Rewarded Ad</string>
+    <string name="please_wait_ad_will_show_here">Please wait ad will show here</string>
+    <string name="please_wait_rewarded_ad_will_show_here">Please wait rewarded ad will show here</string>
+
+
+    <!--Test unit id-->
+    <string name="ad_mob_application_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="rewarded_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_ad_new_api_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_ad_new_api">Rewarded Ad New Api</string>
+    <!--Test unit id-->
+
+</resources>

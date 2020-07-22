@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.francis.admob.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/bannerAdFragment"
+        android:name="com.francis.admob.ui.ads.BannerAdFragment"
+        android:label="BannerAdFragment"
+        tools:layout="@layout/fragment_banner" />
+    <fragment
+        android:id="@+id/interstitialAdFragment"
+        android:name="com.francis.admob.ui.ads.InterstitialAdFragment"
+        android:label="InterstitialAdFragment"
+        tools:layout="@layout/intertitial_ad_fragment" />
+    <fragment
+        android:id="@+id/rewardedAdFragment"
+        android:name="com.francis.admob.ui.ads.RewardedAdFragment"
+        android:label="RewardedAdFragment"
+        tools:layout="@layout/rewarededad_fragment" />
+    <fragment
+        android:id="@+id/rewardedAdNewApiFragment"
+        android:name="com.francis.admob.ui.ads.RewardedAdNewApiFragment"
+        android:label="RewardedAdNewApiFragment"
+        tools:layout="@layout/rewardedad_new_api_fragment" />
+</navigation>
